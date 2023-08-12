@@ -11,6 +11,21 @@ uploadInput.addEventListener("change", function (event) {
   reader.readAsDataURL(file);
 });
 
+function displayResults(response) {
+  if (response == "Healthy") {
+    document.getElementById(
+      "output-result"
+    ).innerHTML = `Your tree is looking good and health<br>Keep taking care of it`;
+  } else if (response == "Bird Eye Mushroom")
+    document.getElementById(
+      "output-result"
+    ).innerHTML = `Your tree maybe effected by ${response}. Please take the necessary precautions.`;
+  else if (response == "Pas Akari")
+    document.getElementById(
+      "output-result"
+    ).innerHTML = `Your tree maybe effected by ${response}. Please take the necessary precautions.`;
+}
+
 uploadButton.addEventListener("click", function () {
   const file = uploadInput.files[0];
   const formData = new FormData();
@@ -22,10 +37,12 @@ uploadButton.addEventListener("click", function () {
     processData: false,
     contentType: false,
     success: function (response) {
-      console.log(response);
+      displayResults(response);
     },
     error: function (xhr, status, error) {
-      console.log(error);
+      if (status === "400") {
+        alert("Upload error: " + xhr);
+      }
     },
   });
 });
