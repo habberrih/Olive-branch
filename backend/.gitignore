@@ -1,3 +1,5 @@
 node_modules
-/model/model.h5
-/model/olive_model.h5
+src/model/model.h5
+src/model/olive_model.h5
+
+src/model/uploaded_images/*
