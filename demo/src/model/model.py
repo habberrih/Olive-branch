@@ -15,7 +15,7 @@ def create_arg_parser():
 def olive_model(image_path):
     
     # Load the saved model
-    model = tf.keras.models.load_model('FullPath') # change path
+    model = tf.keras.models.load_model('D:/Abdullah Habberrih/oliver-trees/backend/src/model/olive_model.h5') # change path
 
         # Load and preprocess a single image
     image = load_img(image_path, target_size=(256, 256))
