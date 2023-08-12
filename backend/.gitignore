@@ -1,1 +1,3 @@
 node_modules
+/model/model.h5
+/model/olive_model.h5
