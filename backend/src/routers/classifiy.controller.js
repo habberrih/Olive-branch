@@ -5,6 +5,9 @@ const path = require("path");
 async function httpGetModelResult(req, res) {
   try {
     const file = req.file;
+    if (!file) {
+      return res.status(400).json("Please Upload a file");
+    }
     const image_path = path.join(
       __dirname,
       "..",
