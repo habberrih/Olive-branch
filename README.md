@@ -25,7 +25,7 @@ pip install -r requirement.txt
 ### NodeJS (CMD)
 
 ```
-cd backend && npm install
+cd demo && npm install
 ```
 
 # Download The Model file by clicking on [OliveModel](https://drive.google.com/drive/folders/1e2ksL21b62zT4U-BDRvC8-vgnnJaoyQ5?usp=sharing).
