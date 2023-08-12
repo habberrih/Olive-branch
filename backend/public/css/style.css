@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #16a159;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #16a159;
+  padding: 30px;
+  font-weight: 500;
+}
+
+.navigation a:hover {
+  color: #fff;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("../utils/o.jpg") no-repeat;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+}
+
+.main h2 {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ede440;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.main h3 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.main-logo {
+  background: none;
+  font-size: medium;
+  text-align: justify;
+}
+.main-btn {
+  color: #ede440;
+  background-color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  transition: 0.7s ease;
+}
+
+.main-btn:hover {
+  background-color: #16a159;
+  transform: scale(1.1);
+}
+
+.social-icons * {
+  color: #fff;
+  padding-right: 20px;
+  font-size: 1.4em;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  width: 16.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 40%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 25px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #16a159;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: #16a159;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.diseases {
+  background-color: #16a159;
+}
+
+.diseases-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 16em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.diseases-card:hover {
+  transform: scale(1.1);
+}
+
+.diseases-image img {
+  width: 100%;
+}
+
+.diseases-card:hover .diseases-image {
+  opacity: 0.9;
+}
+
+.diseases-info {
+  padding: 1em;
+}
+
+.diseases-category {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.diseases-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.more-details {
+  text-decoration: none;
+  color: #16a159;
+}
+
+.more-details:hover {
+  color: #000000;
+}
+
+.content .icon {
+  font-size: 3em;
+}
+
+.content h3 {
+  color: #000;
+  font-weight: 800;
+}
+
+.footer {
+  background-color: #16a159;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
+.footer-title {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+.footer-title span {
+  color: #fff;
+}
+
+.detect-card {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+#imagePreview {
+  margin-bottom: 20px;
+}
+
+.button2 {
+  border: none;
+  color: white;
+  padding: 16px 110px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #008cba;
+}
+
+.button2:hover {
+  background-color: #008cba;
+  color: white;
+}
+
+.form {
+  border: 4px dashed grey;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.detect-card .title {
+  color: #000;
+}
