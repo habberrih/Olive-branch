@@ -14,10 +14,7 @@ function writeStringToFile(filePath, content) {
 
 function executeOliveModel(image_path) {
   return new Promise((resolve, reject) => {
-    const python = spawn("python", [
-      "D:/Abdullah Habberrih/oliver-trees/backend/src/model/model.py",
-      image_path,
-    ]);
+    const python = spawn("python", ["FullFilePath", image_path]); // change path
 
     let resultData = "";
 
