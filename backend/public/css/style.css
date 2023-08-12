@@ -126,6 +126,10 @@ section {
   transition: 0.7s ease;
 }
 
+.cards .title {
+  color: #000;
+}
+
 .card:hover {
   transform: scale(1.1);
 }
@@ -266,4 +270,11 @@ section {
 
 .detect-card .title {
   color: #000;
+}
+
+/* Model Output */
+.output-result {
+  color: #000;
+  font-size: 40px;
+  margin-top: 40px;
 }
