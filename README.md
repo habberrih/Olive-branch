@@ -26,7 +26,7 @@ pip install -r requirement.txt
 cd backend && npm install
 ```
 
-# Download The Model fileby clicking on [Olive_Model](https://drive.google.com/drive/folders/1e2ksL21b62zT4U-BDRvC8-vgnnJaoyQ5?usp=sharing).
+# Download The Model file by clicking on [OliveModel](https://drive.google.com/drive/folders/1e2ksL21b62zT4U-BDRvC8-vgnnJaoyQ5?usp=sharing).
 
 then put it in the following path in the project:
 
