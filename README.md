@@ -56,6 +56,12 @@ model = tf.keras.models.load_model('FullPath')
 like C://local//project//olive_model.h5
 ```
 
+# Run The Demo
+
+```
+cd demo && npm run watch
+```
+
 # About Us
 
 ###
