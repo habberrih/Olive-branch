@@ -1,41 +1,41 @@
-const { spawn } = require('node:child_process');
+const { spawn } = require("node:child_process");
 
-const fs = require('fs');
+const fs = require("fs");
 
 function writeStringToFile(filePath, content) {
   fs.writeFile(filePath, content, (err) => {
     if (err) {
-      console.error('Error writing to file:', err);
+      console.error("Error writing to file:", err);
     } else {
-      console.log('Successfully wrote to file:', filePath);
+      console.log("Successfully wrote to file:", filePath);
     }
   });
 }
 
 function executeOliveModel(image_path) {
   return new Promise((resolve, reject) => {
-    const python = spawn('python', [
-      'G:/vscode/oliver-trees/backend/src/model/model.py',
-      'G:/vscode/oliver-trees/A299.jpg', // image path
+    const python = spawn("python", [
+      "D:/Abdullah Habberrih/oliver-trees/backend/src/model/model.py",
+      image_path,
     ]);
 
-    let resultData = '';
+    let resultData = "";
 
-    python.stdout.on('data', (resultFromPython) => {
-      console.log('Python: Pipe data from python script ...');
+    python.stdout.on("data", (resultFromPython) => {
+      console.log("Python: Pipe data from python script ...");
       const data = resultFromPython.toString();
-      resultData += data.toString();
+      resultData = data.toString();
     });
 
-    python.on('close', (code) => {
+    python.on("close", (code) => {
       console.log(`Node: executed python successfully with code: ${code}`);
-      console.log('Result from Python:', resultData);
-      writeStringToFile('result.txt', resultData);
+      console.log("Result from Python:", resultData);
+      writeStringToFile("result.txt", resultData);
       resolve();
     });
 
-    python.on('error', (err) => {
-      console.error('Failed to execute Python script:', err);
+    python.on("error", (err) => {
+      console.error("Failed to execute Python script:", err);
       reject(err);
     });
   });
