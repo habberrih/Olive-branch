@@ -1,12 +1,12 @@
-const express = require('express');
+const express = require("express");
 const app = express();
+const path = require("path");
 
-// const authRouter = require('./routes/auth');
-const modelRouter = require('./routers/classify.route');
-// const authenticateUser = require('./middleware/authentication');
+const modelRouter = require("./routers/classify.route");
+const primaryHTML = path.join(__dirname, "..", "public");
 
 app.use(express.json());
-
-app.use('/', modelRouter);
+app.use(express.static(primaryHTML));
+app.use(modelRouter);
 
 module.exports = app;
