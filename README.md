@@ -1,5 +1,7 @@
 # Olive Branch
 
+![Olive Logo](https://github.com/habberrih/Olive-branch/blob/main/demo/public/utils/logo.jpg)
+
 ###
 
 Olive Branch aims to support olive tree growers by providing a comprehensive solution for disease identification, classification, and cultivation guidance. It goes beyond disease management and envisions creating a platform for olive tree farmers to connect, share knowledge, and exchange experiences, fostering a sense of community among growers. Additionally, the app serves as a valuable tool by sending reminders for essential tasks like watering schedules and harvest periods, ensuring that farmers stay organized. It offers various features such as guidance on best practices, pest management, and optimal growing conditions, serving as a reliable resource throughout the olive tree cultivation journey. By encompassing these diverse features, the project aims to empower farmers and contribute to their success in maintaining thriving and healthy olive groves.
