@@ -26,6 +26,36 @@ pip install -r requirement.txt
 cd backend && npm install
 ```
 
+# Download The Model fileby clicking on [Olive_Model](https://drive.google.com/drive/folders/1e2ksL21b62zT4U-BDRvC8-vgnnJaoyQ5?usp=sharing).
+
+then put it in the following path in the project:
+
+```
+/backend/model/olive_model.h5
+```
+
+# <b> Important Notes <b>
+
+1. You have to create a file called uploaded_images in:
+
+```
+/backend/src/model/uploaded_images/
+```
+
+2. You have to specify the full path in execute_module.js
+
+```
+17- const python = spawn("python", ["FullFilePath", image_path]);
+// like C://local//project/model.py
+```
+
+3. Also in model.py file when the model load
+
+```
+model = tf.keras.models.load_model('FullPath')
+like C://local//project//olive_model.h5
+```
+
 # About Us
 
 ###
