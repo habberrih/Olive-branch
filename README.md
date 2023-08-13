@@ -48,14 +48,14 @@ then put the model in the following path in the project:
 
 ```
 17- const python = spawn("python", ["FullFilePath", image_path]);
-// like C://local//project/model.py
+// like C://local/project/model.py
 ```
 
 3. Also in model.py file when the model load
 
 ```
 model = tf.keras.models.load_model('FullPath')
-like C://local//project//olive_model.h5
+like C://local/project/olive_model.h5
 ```
 
 # Run The Demo
